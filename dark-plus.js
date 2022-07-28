@@ -32,7 +32,7 @@
     instantStyles: [{
         name: "dark-plus",
         style: `
-/* Nriot's custom bilibili style (Exclusive Edition) */
+/* Dark+ */
 /* Written by [NriotHrreion] */
 
 /* !!! REQUIRE DARK MODE !!! */
