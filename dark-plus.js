@@ -42,6 +42,14 @@
     --nocp-gray-1: #3e3c3c;
     --nocp-gray-2: #4d4c4c;
     --nocp-gray-3: #939393;
+    --nocp-gray-4: #1b1b1b;
+}
+
+body .van-popover.van-popper.van-more li {
+    color: var(--nocp-gray-3) !important;
+}
+body .van-popover.van-popper.van-more li svg {
+    fill: var(--nocp-gray-3) !important;
 }
 
 .bili-header .channel-items__left {
@@ -52,8 +60,17 @@
     background: #ff473d !important;
 }
 
-.bili-video-card__info--tit a, .bili-movie-card__info--tit a {
+.bili-video-card__info--tit a,
+.bili-movie-card__info--tit a,
+.bili-live-card__info--tit a,
+.bili-bangumi-card__info--tit a,
+.bili-manga-card__info--tit a,
+.bili-cheese-card__info--tit a {
     color: var(--nocp-white-1) !important;
+}
+
+.article-card-body picture {
+    border-color: transparent !important;
 }
 
 .search-header .search-input-wrap {
@@ -147,6 +164,12 @@
 .video-container-v1 .multi-page-v1 {
     background: #444 !important;
 }
+.video-container-v1 .multi-page-v1 li .page-num {
+    color: var(--nocp-gray-3) !important;
+}
+.video-container-v1 .multi-page-v1 li:hover, .video-container-v1 .multi-page-v1 li.on {
+    background: #555 !important;
+}
 .video-container-v1 .base-video-sections-v1 {
     background: #444 !important;
 }
@@ -163,17 +186,22 @@
 .video-container-v1 .toolbar-left svg {
     fill: #aaa !important;
 }
+.video-container-v1 .toolbar-left .like:hover .info-text {
+    color: var(--brand_blue) !important;
+}
 .video-container-v1 .desc-info {
     color: var(--nocp-white-1) !important;
 }
 .video-container-v1 .tag, .video-container-v1 .tag:hover {
     background-color: transparent !important;
 }
-.video-container-v1 .tag a {
+.video-container-v1 .tag a,
+.video-container-v1 .tag-link {
     background: var(--nocp-gray-1) !important;
     color: var(--nocp-white-1) !important;
 }
-.video-container-v1 .tag a svg {
+.video-container-v1 .tag a svg,
+.video-container-v1 .tag-link svg {
     fill: var(--nocp-white-1) !important;
 }
 .video-container-v1 .tag-more, .video-container-v1 .tag-more:hover {
@@ -201,8 +229,34 @@
     background: #222 !important;
     border-top-color: #222 !important;
 }
+.video-container-v1 .comment .reply-box .emoji-btn {
+    border-color: transparent !important;
+    background-color: var(--nocp-gray-1);
+}
+.video-container-v1 .comment .reply-box .emoji-panel {
+    border-color: #2f2f2f !important;
+}
+.video-container-v1 .comment .reply-box .emoji-panel .emoji-title,
+.video-container-v1 .comment .reply-box .emoji-panel .emoji-content {
+    background-color: var(--nocp-gray-4) !important;
+}
+.video-container-v1 .comment .reply-box .emoji-panel .emoji-content .emoji-info:hover {
+    background-color: var(--nocp-gray-2) !important;
+}
+.video-container-v1 .comment .reply-box .emoji-panel .emoji-tab {
+    background-color: #2f2f2f !important;
+}
+.video-container-v1 .comment .reply-box .emoji-panel .emoji-tab .emoji-type.current-type {
+    background-color: var(--nocp-gray-3) !important;
+}
+.video-container-v1 .comment .reply-box .emoji-panel .emoji-tab .emoji-type:hover {
+    background-color: var(--nocp-gray-2) !important;
+}
 .video-container-v1 .comment .content-warp {
-    border-bottom-color: var(--nocp-gray-2) !important;
+    border-bottom-color: var(--nocp-gray-1) !important;
+}
+.video-container-v1 .comment .content-warp .reply-content {
+    color: var(--nocp-white-1) !important;
 }
 .video-container-v1 .comment .content-warp .reply-tag-item {
     background-color: #2d2d2d !important;
