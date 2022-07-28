@@ -52,6 +52,22 @@ body .van-popover.van-popper.van-more li svg {
     fill: var(--nocp-gray-3) !important;
 }
 
+body .user-card .card-user-name {
+    color: var(--nocp-white-1) !important;
+}
+body .user-card .card-user-attention span:first-child,
+body .user-card .card-user-fans span:first-child,
+body .user-card .card-user-like span:first-child {
+    color: var(--nocp-white-1) !important;
+}
+body .user-card .card-message-btn {
+    border-color: var(--nocp-gray-3) !important;
+}
+body .user-card .card-message-btn:hover {
+    border-color: var(--brand_blue) !important;
+    color: var(--brand_blue) !important;
+}
+
 .bili-header .channel-items__left {
     border-right-color: var(--nocp-gray-2) !important;
 }
@@ -161,6 +177,13 @@ body .van-popover.van-popper.van-more li svg {
 .video-container-v1 .float-nav-exp .item.on svg {
     fill: var(--brand_blue) !important;
 }
+.video-container-v1 .normal-members-header {
+    background: #444 !important;
+    color: #eee !important;
+}
+.video-container-v1 .normal-members-header .person {
+    color: var(--nocp-gray-3) !important;
+}
 .video-container-v1 .multi-page-v1 {
     background: #444 !important;
 }
@@ -215,6 +238,10 @@ body .van-popover.van-popper.van-more li svg {
 }
 .video-container-v1 .s_tag-v1 {
     border-bottom-color: var(--nocp-gray-2) !important;
+}
+.video-container-v1 .activity-m-v1 {
+    /* No AD */
+    display: none !important;
 }
 .video-container-v1 .nav-title {
     color: var(--nocp-white-1) !important;
