@@ -66,14 +66,28 @@ body .van-popover.van-popper.van-more li svg {
     fill: var(--nocp-gray-3) !important;
 }
 
+/*  */
+
+.header-channel-fixed {
+    display: none !important;
+}
+.feed-floor .channel-floor {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
 /* User Card */
 
-body .user-card .card-user-name {
+body .user-card .card-user-name,
+body .user-card-m-exp .user .name {
     color: var(--nocp-white-1) !important;
 }
 body .user-card .card-user-attention span:first-child,
 body .user-card .card-user-fans span:first-child,
-body .user-card .card-user-like span:first-child {
+body .user-card .card-user-like span:first-child,
+body .user-card-m-exp .social .like,
+body .user-card-m-exp .social .fans,
+body .user-card-m-exp .social > span span:first-child {
     color: var(--nocp-white-1) !important;
 }
 body .user-card .card-message-btn {
@@ -82,6 +96,18 @@ body .user-card .card-message-btn {
 body .user-card .card-message-btn:hover {
     border-color: var(--brand_blue) !important;
     color: var(--brand_blue) !important;
+}
+body .user-card-m-exp {
+    border: none !important;
+    box-shadow: rgb(0 0 0 / 30%) 0 4px 8px 0;
+}
+body .user-card-m-exp .bg {
+    background-image: auto !important;
+}
+body .user-card-m-exp .user-info-wrapper {
+    background-color: #222 !important;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 /* Homepage Header */
@@ -349,6 +375,11 @@ body .user-card .card-message-btn:hover {
 }
 .bili-footer .qrcode-wrapper .qrcode-title {
     color: var(--nocp-white-1) !important;
+}
+
+/* Homepage Redesign */
+.home-redesign-base {
+    margin-top: 50px;
 }
 
 `,
