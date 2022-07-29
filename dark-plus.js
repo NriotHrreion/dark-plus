@@ -37,6 +37,8 @@
 
 /* !!! REQUIRE DARK MODE !!! */
 
+/* Global Vars */
+
 :root{
     --nocp-white-1: #e5e5e5;
     --nocp-gray-1: #3e3c3c;
@@ -45,12 +47,26 @@
     --nocp-gray-4: #1b1b1b;
 }
 
+/* Popup */
+
+body .van-popover.van-popper.van-share .box-right {
+    border-left-color: var(--nocp-gray-2) !important;
+}
+body .van-popover.van-popper.van-share .box-left .share-link {
+    background-color: var(--nocp-gray-1) !important;
+}
+body .van-popover.van-popper.van-share .box-left .share-link #link_copy {
+    background-color: transparent !important;
+    color: var(--nocp-white-1) !important;
+}
 body .van-popover.van-popper.van-more li {
     color: var(--nocp-gray-3) !important;
 }
 body .van-popover.van-popper.van-more li svg {
     fill: var(--nocp-gray-3) !important;
 }
+
+/* User Card */
 
 body .user-card .card-user-name {
     color: var(--nocp-white-1) !important;
@@ -68,13 +84,19 @@ body .user-card .card-message-btn:hover {
     color: var(--brand_blue) !important;
 }
 
+/* Homepage Header */
+
 .bili-header .channel-items__left {
     border-right-color: var(--nocp-gray-2) !important;
 }
 
+/* Navbar User Info Panel */
+
 .user-info-panel .logout:hover {
     background: #ff473d !important;
 }
+
+/* Homepage Info Cards */
 
 .bili-video-card__info--tit a,
 .bili-movie-card__info--tit a,
@@ -84,10 +106,11 @@ body .user-card .card-message-btn:hover {
 .bili-cheese-card__info--tit a {
     color: var(--nocp-white-1) !important;
 }
-
 .article-card-body picture {
     border-color: transparent !important;
 }
+
+/* Search Header */
 
 .search-header .search-input-wrap {
     background: var(--nocp-gray-2) !important;
@@ -120,6 +143,8 @@ body .user-card .card-message-btn:hover {
     border: none !important;
 }
 
+/* Search Panel */
+
 .search-panel {
     background: var(--nocp-gray-2) !important;
     border-color: transparent !important;
@@ -144,6 +169,8 @@ body .user-card .card-message-btn:hover {
     background: var(--nocp-gray-3) !important;
 }
 
+/* Search Page */
+
 .search-page .show-more-text {
     background: var(--nocp-gray-2) !important;
 }
@@ -162,6 +189,8 @@ body .user-card .card-message-btn:hover {
 .search-page .vui_pagenation--btns button.vui_button--disabled {
     color: var(--nocp-gray-3) !important;
 }
+
+/* Video Page */
 
 .video-container-v1 .float-nav-exp .item, .video-container-v1 .fixed-nav .item {
     background-color: #333 !important;
@@ -187,11 +216,23 @@ body .user-card .card-message-btn:hover {
 .video-container-v1 .multi-page-v1 {
     background: #444 !important;
 }
-.video-container-v1 .multi-page-v1 li .page-num {
+.video-container-v1 .multi-page-v1 .list-box li .page-num {
     color: var(--nocp-gray-3) !important;
 }
-.video-container-v1 .multi-page-v1 li:hover, .video-container-v1 .multi-page-v1 li.on {
+.video-container-v1 .multi-page-v1 .list-box li .part {
+    color: var(--nocp-white-1) !important;
+}
+.video-container-v1 .multi-page-v1 .list-box li:hover,
+.video-container-v1 .multi-page-v1 .list-box li.on {
     background: #555 !important;
+}
+.video-container-v1 .multi-page-v1 .module-box li {
+    background: #555 !important;
+    border-color: transparent !important;
+}
+.video-container-v1 .multi-page-v1 .module-box li:hover,
+.video-container-v1 .multi-page-v1 .module-box li.on {
+    border-color: var(--brand_blue) !important;
 }
 .video-container-v1 .base-video-sections-v1 {
     background: #444 !important;
@@ -210,6 +251,12 @@ body .user-card .card-message-btn:hover {
     fill: #aaa !important;
 }
 .video-container-v1 .toolbar-left .like:hover .info-text {
+    color: var(--brand_blue) !important;
+}
+.video-container-v1 .toolbar-left .on svg {
+    fill: var(--brand_blue) !important;
+}
+.video-container-v1 .toolbar-left .like.on .info-text {
     color: var(--brand_blue) !important;
 }
 .video-container-v1 .desc-info {
@@ -292,6 +339,8 @@ body .user-card .card-message-btn:hover {
     color: var(--nocp-white-1) !important;
 }
 
+/* Footer */
+
 .bili-footer {
     background-color: #333 !important;
 }
@@ -300,15 +349,6 @@ body .user-card .card-message-btn:hover {
 }
 .bili-footer .qrcode-wrapper .qrcode-title {
     color: var(--nocp-white-1) !important;
-}
-
-/* Info Panel Style */
-.nocp-info-panel {
-    display: block !important;
-    padding-left: 15px;
-}
-.nocp-info-panel p {
-    color: var(--nocp-gray-3);
 }
 
 `,
