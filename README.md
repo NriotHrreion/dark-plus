@@ -1,5 +1,7 @@
 # Dark+
 
+## `This Repo Has Been Archived`
+
 By NriotHrreion
 
 > Bilibili Evolved 夜间模式增强版组件
